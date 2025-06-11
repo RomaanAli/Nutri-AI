@@ -1,0 +1,52 @@
+/* Footer container styling */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center;
+  background-color: transparent; /* Matches header style */
+  padding: 10px 20px; /* Reduced padding */
+  color: black; /* Black font color */
+  font-weight: bold;
+  border-top: 1px solid #ddd; /* Light border for separation */
+  box-sizing: border-box; /* Ensure padding and border are included in size */
+  width: 100%; /* Full-width footer */
+  position: relative; /* Prevent overlap issues */
+  overflow: hidden; /* Prevent scrolling issues */
+}
+
+/* Footer Left Section */
+.footer-left {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black; /* Black font color */
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  color: #2ecc71; /* Green hover effect */
+}
+
+/* Footer Right Section */
+.footer-right {
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    padding: 15px; /* Adjust spacing */
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 10px;
+  }
+}

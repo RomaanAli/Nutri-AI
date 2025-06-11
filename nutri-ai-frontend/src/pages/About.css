@@ -1,0 +1,105 @@
+/* General styling for the About page container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px; /* Reduced padding to prevent content from exceeding viewport */
+  background-color: #f9f9f9; /* Light background for contrast */
+  height: 80vh; /* Ensure the container fills the entire viewport height */
+  overflow: hidden; /* Prevent scrollbars by hiding any overflowing content */
+  box-sizing: border-box; /* Include padding in height calculations */
+  
+}
+
+/* Flex container for image and text content */
+.about-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  height: 100%; /* Use full height of the parent container */
+  box-sizing: border-box; /* Ensure proper spacing */
+  
+}
+
+/* Styling for the image section */
+/* Increased flex to 1.5 for wider image area */
+/* Increased padding for better spacing */
+.about-image {
+  flex: 1.5; /* Increased from 1 to 1.5 for more width */
+  padding: 1px; /* Slightly more padding for bigger image */
+  max-height: 100%; /* Prevent image from exceeding container height */
+  display: flex;
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
+}
+
+/* Styling for the image itself */
+/* Made image larger with max-width 90% and max-height 500px */
+/* Added min-width and min-height to prevent it from becoming too small */
+/* Added subtle shadow for better visual pop */
+.about-image img {
+  max-width: 90%; /* Allow the image to take more width */
+  max-height: 500px; /* Increase the max height */
+  min-width: 220px; /* Ensure image is not too small */
+  min-height: 200px; /* Ensure image is not too small */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Rounded corners */
+  object-fit: contain; /* Scale image without cropping */
+  box-shadow: 0 4px 16px #067c70; /* Optional: subtle shadow for pop */
+}
+
+/* Styling for the text section */
+.about-text {
+  flex: 2; /* Takes up more space than the image */
+  padding: 15px; /* Reduced padding for better fit */
+  background-color: white; /* White background for text contrast */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 16px #067c70; /* Subtle shadow */
+  overflow: auto; /* Allow scrolling if content exceeds its area */
+  max-height: calc(100vh - 100px); /* Ensure the text box fits within the viewport */
+  box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.about-text h1 {
+  font-size: 28px; /* Adjusted size for better fit */
+  margin-bottom: 15px;
+  color: #067c70; /* Header color */
+}
+
+.about-text p {
+  font-size: 16px; /* Adjusted size for better fit */
+  line-height: 1.5;
+  color: #333; /* Text color */
+  text-align: justify; /* Justifies text to align both left and right edges */
+  text-justify: inter-word; /* Ensures words are spaced evenly */
+  margin: 0; /* Remove default margin for better alignment */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column; /* Stack the image and text vertically */
+  }
+
+  .about-image,
+  .about-text {
+      flex: 1; /* Equal space for image and text */
+      padding: 5px; /* Further reduced padding for small screens */
+      max-height: 50%; /* Adjust height for small screens */
+  }
+
+  .about-text {
+      max-height: 50vh; /* Adjust height to prevent scrolling on small screens */
+  }
+
+  /* Responsive image sizing for mobile */
+  .about-image img {
+      max-width: 100%;
+      max-height: 250px; /* Reasonable size for mobile */
+      min-width: 120px;
+      min-height: 100px;
+  }
+}

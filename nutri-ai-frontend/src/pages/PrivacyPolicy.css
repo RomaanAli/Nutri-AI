@@ -1,0 +1,96 @@
+/* General styling for the Privacy Policy page */
+.privacy-policy {
+    margin: 20px auto;
+    padding: 20px;
+    color: #333; /* Main text color */
+    line-height: 1; /* Improved readability */
+    font-family: 'Arial', sans-serif;
+    background-color: white; /* Matches overall website theme */
+    border-radius: 10px; /* Rounded edges for clean look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1060px; /* Limits width for readability */
+  }
+  
+  /* Styling for the main heading */
+  .privacy-policy h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:#067c70; /* Green theme color */
+    text-align: left; /* Align heading to the left */
+  }
+  
+  /* Styling for subheadings */
+  .privacy-policy h2 {
+    font-size: 18px;
+    color: #067c70; /* Neutral color for subheadings */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Styling for paragraphs */
+  .privacy-policy p {
+    margin-bottom: 15px; /* Space between paragraphs */
+    text-align: justify; /* Justified text for clean alignment */
+  }
+  
+  /* Styling for unordered lists */
+  .privacy-policy ul {
+    margin-left: 20px; /* Indent list from main content */
+    padding-left: 0;
+  }
+  
+  .privacy-policy ul li {
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
+  /* Styling for links */
+  .privacy-policy a {
+    color:#067c70; /* Matches green theme */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+  }
+  
+  .privacy-policy a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets and smaller screens */
+  @media (max-width: 768px) {
+    .privacy-policy {
+      padding: 15px; /* Reduced padding for smaller screens */
+      font-size: 0.95rem; /* Slightly smaller font size */
+    }
+  
+    .privacy-policy h1 {
+      font-size: 1.75rem; /* Adjust main heading size */
+      text-align: center; /* Center heading for smaller screens */
+    }
+  
+    .privacy-policy h2 {
+      font-size: 1.25rem; /* Adjust subheading size */
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .privacy-policy {
+      padding: 10px; /* Further reduce padding */
+      font-size: 0.9rem; /* Smaller font size for narrow devices */
+    }
+  
+    .privacy-policy h1 {
+      font-size: 1.5rem; /* Adjust main heading size for mobile */
+    }
+  
+    .privacy-policy h2 {
+      font-size: 1.1rem; /* Adjust subheading size */
+    }
+  
+    .privacy-policy p {
+      margin-bottom: 10px; /* Reduce spacing for compact view */
+    }
+  }
+  

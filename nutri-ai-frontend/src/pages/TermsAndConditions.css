@@ -1,0 +1,93 @@
+/* General styling for the Terms and Conditions page */
+.terms-and-conditions {
+  margin: 20px auto;
+  padding: 20px;
+  color: #333; /* Text color */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5; /* Better readability */
+  background-color: white; /* Matches the theme */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 1060px; /* Limits content width */
+}
+
+/* Main heading styling */
+.terms-and-conditions h1 {
+  font-size: 2rem;
+  color:#067c70; /* Theme color */
+  margin-bottom: 20px;
+}
+
+/* Subheading styling */
+.terms-and-conditions h2 {
+  font-size: 18px;
+  color: #067c70;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.terms-and-conditions p {
+  margin-bottom: 15px;
+  text-align: justify; /* Aligns text for a clean look */
+}
+
+/* Unordered list styling */
+.terms-and-conditions ul {
+  margin-left: 20px; /* Indent lists */
+  padding-left: 0;
+}
+
+.terms-and-conditions ul li {
+  margin-bottom: 10px;
+}
+
+/* Link styling */
+.terms-and-conditions a {
+  color: #067c70; /* Green theme for links */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold;
+}
+
+.terms-and-conditions a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .terms-and-conditions {
+    padding: 15px;
+    font-size: 0.95rem; /* Slightly smaller text */
+  }
+
+  .terms-and-conditions h1 {
+    font-size: 1.75rem;
+    text-align: center; /* Center-align main heading */
+  }
+
+  .terms-and-conditions h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .terms-and-conditions {
+    padding: 10px;
+    font-size: 0.9rem; /* Adjust font size for small screens */
+  }
+
+  .terms-and-conditions h1 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .terms-and-conditions h2 {
+    font-size: 1.1rem;
+  }
+
+  .terms-and-conditions p {
+    margin-bottom: 10px; /* Less spacing for compact view */
+  }
+}

@@ -1,0 +1,170 @@
+/* Overall container for Login/Signup */
+.login-signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Responsive wrap */
+}
+
+/* Image section styling */
+.login-signup-image {
+  flex: 1 1 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.login-signup-image img {
+  max-width: 85%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #067c70;
+  object-fit: contain;
+}
+
+/* Form section styling */
+.login-signup-form {
+  flex: 1 1 400px;
+  padding: 30px;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #067c70;
+  margin: 0 40px;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.login-signup-form h1 {
+  text-align: center;
+  color: #067c70;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative; /* For icon positioning */
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #067c70;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Make all input fields consistent with password field */
+.form-group input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Right padding for icon space */
+  font-size: 14px;
+  border: 1px solid #067c70;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Optional: if you want to add icons to other inputs */
+.form-group .input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #067c70;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Password input wrapper for eye icon */
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper .password-input {
+  width: 100%;
+  padding-right: 40px; /* eye icon ke liye space */
+  box-sizing: border-box;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 14px; /* input ke andar icon right side */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #067c70;
+  font-size: 20px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #26a69a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #067c70;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+p button {
+  color: #067c70;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+p button:hover {
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .login-signup-container {
+    height: auto;
+    padding: 15px;
+  }
+
+  .login-signup-image,
+  .login-signup-form {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .login-signup-image img {
+    height: auto;
+    max-width: 100%;
+  }
+}

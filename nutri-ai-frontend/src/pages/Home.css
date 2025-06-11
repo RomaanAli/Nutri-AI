@@ -1,0 +1,117 @@
+/* General container styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Green Section Styling */
+.green-section {
+  background-color:#26A69A; /* Green background */
+  color: white;
+  display: flex;
+  flex-wrap: wrap; /* Ensure items stack on smaller screens */
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px;
+  position: relative; /* Allow image to overlap outside */
+  overflow: hidden; /* Prevent content cut-off */
+  margin: 11px 0; /* Space above and below the green section */
+}
+
+/* Text Content */
+.text-content {
+  max-width: 50%; /* Restricts the width of text */
+  z-index: 1; /* Keeps text above the image */
+}
+
+.text-content h1 {
+  font-size: 33px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.read-more-button {
+  background-color: white;
+  color: #067c70;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.read-more-button:hover {
+  /*background-color: #368fee; /* Darker green */
+  background-color: #067c70;
+  color: white;
+}
+
+/* Image Content */
+.image-content img {
+  max-width: 600px; /* Increase the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position image relative to the section */
+  left: 750px; /* Move the image slightly to the left */
+  top: 0;
+  z-index: 0; /* Ensure the image is behind the text */
+  transform: translateY(20px); /* Adjust vertical positioning */
+}
+
+/* Responsive Design */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .green-section {
+    flex-direction: column; /* Stack content vertically */
+    padding: 60px; /* Reduce padding */
+  }
+
+  .text-content {
+    max-width: 90%; /* Expand text width to fit smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .text-content h1 {
+    font-size: 28px; /* Adjust font size for tablets */
+  }
+
+  .image-content img {
+    max-width: 400px; /* Reduce image size */
+    position: static; /* Let the image flow normally */
+    transform: translateY(0); /* Remove vertical adjustment */
+    margin-top: 20px; /* Add space between text and image */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .green-section {
+    padding: 30px; /* Further reduce padding for small screens */
+  }
+
+  .text-content {
+    max-width: 100%; /* Use full width for text */
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 24px; /* Further adjust font size for mobiles */
+  }
+
+  .read-more-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .image-content img {
+    max-width: 300px; /* Further reduce image size */
+    margin-top: 15px; /* Add space between text and image */
+  }
+}
